@@ -1,0 +1,48 @@
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.upload-area{
+    width: 400px;
+    height: 300px;
+    border: 2px solid lightgray;
+    border-radius: 3px;
+    margin: 0 auto;
+    margin-top: 100px;
+    text-align: center;
+    overflow: auto;
+    background-image: url(style/1.png);
+    background-size: contain;
+}
+
+.upload-area:hover{
+    cursor: pointer;
+}
+
+.upload-area h1{
+    text-align: center;
+    font-weight: normal;
+    font-family: sans-serif;
+    line-height: 50px;
+    color: white;
+}
+
+#file{
+    display: none;
+}
+
+/* Thumbnail */
+.thumbnail{
+    width: 120px;
+    height: 150px;
+    padding: 2px;
+    border: 2px solid lightgray;
+    border-radius: 3px;
+    float: left;
+    margin: 25px;
+}
+.name{font-size:16px;}
+.size{
+    font-size:12px;
+}

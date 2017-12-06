@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<title>MyVITdrive Start Page</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<head>
+  <style>
+  .section-heading{
+    color: white !important;
+    font-size:58px !important;
+text-shadow: 0px 5px 8px black;
+margin-top: 200px;
+text-align: center;
+  }
+  body{
+    background: url("css/office-table.jpg") no-repeat;
+    background-size: 80%;
+    background-position: top center;
+    resize: both;
+    overflow: auto;
+  }
+  .jumbotron{
+    background: none;
+    padding: 100px 25px;
+  }
+  .navbar {
+     margin-bottom: 0;
+     background-color: rgb(177,201,204);
+     z-index: 9999;
+     border: 0;
+     font-size: 20px !important;
+     line-height: 1.42857143 !important;
+     border-radius: 0;
+     font-family: Montserrat, sans-serif;
+ }
+ .navbar li a, .navbar {
+     color: rgb(10,62,71) !important;
+ }
+ .navbar-nav li a:hover, .navbar-nav li.active a {
+     color:rgb(177,201,204) !important;
+     background-color: rgb(10,62,71) !important;
+ }
+ .img-responsive{position:inline-block;
+ height:55px;
+}
+.form-group{margin-top:80px;}
+.container-fluid {
+     padding-top: 250px ;
+     padding-left: 150px;
+     padding-right: 150px;
+     padding-bottom: : 100px;
+ }
+ .bg-grey {
+      background-color: #f6f6f6;
+  }
+  footer .glyphicon{margin: none;}
+ .slideanim {visibility:hidden;}
+ .glyphicon{
+font-size:40px;
+margin-top: 20px;
+color:rgb(10,62,71);
+}
+.slide {
+     animation-name: slide;
+     -webkit-animation-name: slide;
+     animation-duration: 3s;
+     -webkit-animation-duration: 3s;
+     visibility: visible;
+ }
+ @keyframes slide {
+   0% {
+     opacity: 0;
+     transform: translateY(70%);
+   }
+   100% {
+     opacity: 1;
+     transform: translateY(0%);
+   }
+ }
+ @-webkit-keyframes slide {
+   0% {
+     opacity: 0;
+     -webkit-transform: translateY(70%);
+   }
+   100% {
+     opacity: 1;
+     -webkit-transform: translateY(0%);
+   }
+ }
+ @media screen and (max-width: 768px) {
+   .col-md-4 {
+     text-align: center;
+     margin: 0;
+   }
+   .btn-lg {
+       width: 100%;
+       margin-bottom: 35px;
+   }
+ }
+ @media screen and (max-width: 480px) {
+   .logo {
+       font-size: 150px;
+   }
+ }
+
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="#myPage"><img class="img-responsive" src="logo1.png" alt="logo"/></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#features">Features</a></li>
+          <li><a href="#help">Help</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="jumbotron text-center">
+  <h1 class="section-heading">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspTrack all your files at one place </h1>
+  <a href= 'login.php' target="_blank"><button type="button" class="btn btn-primary btn-lg">Login</button></a>
+  <a href='register.php' target="_blank"><button type="button" class="btn btn-danger btn-lg">Sign-up</button></a>
+</div>
+<!--Container Features Section-->
+<div id="features" class="container-fluid jumbotron text-center">
+  <h1 clas="section-heading">Features</h1>
+  <h2>What features MyVIT Drive offers</h2>
+  <br>
+  <div class="row slideanim">
+   <div class="col-md-4">
+     <span class="glyphicon glyphicon-cloud-upload"></span>
+     <h2>Upload</h2>
+     <p>Upload any of your files on to the cloud</p>
+   </div>
+   <div class="col-md-4">
+     <span class="glyphicon glyphicon-folder-close"></span>
+     <h2>Store</h2>
+     <p>Save your computer lots of space by storing your files on our Cloud</p>
+   </div>
+   <div class="col-md-4">
+     <span class="glyphicon glyphicon-cloud-download"></span>
+     <h2>Download</h2>
+     <p>Download important files anywhere from the cloud</p>
+   </div>
+ </div>
+ <!-- Container (Contact Section) -->
+ <div id="contact" class="jumbotron container-fluid bg-grey">
+   <h1 class="text-center">Contact</h1>
+   <div class="row">
+     <div class="col-sm-5" style="text-align:left;">
+       <p style="margin-top:30px;">Contact us and we'll get back to you within 24 hours.</p>
+       <p><span class="glyphicon glyphicon-map-marker"></span> Vellore,India</p>
+       <p><span class="glyphicon glyphicon-phone"></span> +91 9003798992</p>
+       <p><span class="glyphicon glyphicon-envelope"></span> vaishaliyegi@gmail.com</p>
+     </div>
+     <div class="col-sm-7 slideanim">
+       <div class="row">
+         <div class="col-sm-6 form-group">
+           <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+         </div>
+         <div class="col-sm-6 form-group">
+           <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+         </div>
+       </div>
+       <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+       <div class="row">
+         <div class="col-sm-12">
+           <button class="btn btn-default pull-right" type="submit">Send</button>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+ <footer class="text-center">
+   <a href="#myPage" title="To Top">
+     <span class="glyphicon glyphicon-chevron-up"></span>
+   </a>
+   <p>Made By Vaishali Yegi</p>
+ </footer>
+
+
+ <script>
+ $(document).ready(function(){
+   // Add smooth scrolling to all links in navbar + footer link
+   $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+     // Make sure this.hash has a value before overriding default behavior
+     if (this.hash !== "") {
+       // Prevent default anchor click behavior
+       event.preventDefault();
+
+       // Store hash
+       var hash = this.hash;
+
+       // Using jQuery's animate() method to add smooth page scroll
+       // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+       $('html, body').animate({
+         scrollTop: $(hash).offset().top
+       }, 900, function(){
+
+         // Add hash (#) to URL when done scrolling (default click behavior)
+         window.location.hash = hash;
+       });
+     } // End if
+   });
+
+   $(window).scroll(function() {
+     $(".slideanim").each(function(){
+       var pos = $(this).offset().top;
+
+       var winTop = $(window).scrollTop();
+         if (pos < winTop + 600) {
+           $(this).addClass("slide");
+         }
+     });
+   });
+ })
+ </script>
+
+
+</body>
+</html>
